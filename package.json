@@ -1,0 +1,13 @@
+{
+  "name": "backend-sinpat",
+  "version": "1.0.0",
+  "description": "this a practice project",
+  "license": "MIT",
+  "author": "Ruhul",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node logLesson.js" 
+  }
+}
