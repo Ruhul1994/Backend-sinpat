@@ -1,18 +1,17 @@
 const http = require('http');
-const PORT= 8080;
-const server = http.createServer((_,res)=>{
-res.end('Hello server is up')
-})
-
-server.listen(PORT,()=>{
-    console.log(`server is connect at: ${PORT}`);
-})
+const fs = require('fs');
+const PORT = 8080;
 
 
-// function closeServer(){
-//     server.close(()=>{
-//         console.log(`the server is close now.`)
-//     })
-// }
+   let server = http.createServer((_, res) => {
+        const readableStream = fs.createReadStream('text1.txt', 'utf-8');
+        readableStream.pipe(res);
+    });
 
-// setTimeout(closeServer, 2000);
+    server.listen(PORT, () => {
+        console.log(`Server is connected at: ${PORT}`);
+    });
+
+
+
+

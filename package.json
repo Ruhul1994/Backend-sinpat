@@ -8,6 +8,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node logLesson.js" 
+    "dev": "node logLesson.js",
+    "start":"nodemon express.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }
